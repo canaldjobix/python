@@ -1,0 +1,40 @@
+Python Scrapy
+
+sudo dnf install -f python3 
+pip scrapy
+
+scrapy shell https://docs.scrapy.org/en/latest/topics/selectors.html
+Teste de Tag: http://www.testedetag.com/
+Código da página
+
+response
+request
+response.text
+
+response.selector.xpath('//title')
+    [<Selector xpath='//title' data='<title>Selectors — Scrapy 2.0.1 document'>]
+
+response.selector.xpath('//title').get()
+    '<title>Selectors — Scrapy 2.0.1 documentation</title>'
+
+response.selector.xpath('//title/text()').get()
+    'Selectors — Scrapy 2.0.1 documentation'
+
+response.selector.xpath('//h1/text()').get()
+    'Selectors'
+response.selector.xpath('//h2/text()').get()
+    'Using selectors'
+response.selector.xpath('//h2/text()').getall()
+    ['Using selectors', 'Working with XPaths', 'Built-in Selectors reference', 'Examples']
+response.selector.xpath('//h2/text()')[2].get()
+    response.selector.xpath('//h2/text()')[2].get()
+
+title = response.selector.xpath('//title/text()').get()
+h1 = response.selector.xpath('//h1/text()').get()
+
+
+print(title,h1)
+
+conteudo = response.selector.xpath('//h2/text()').getall()
+for text in conteudo:
+    print(text)
