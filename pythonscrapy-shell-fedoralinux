@@ -1,5 +1,8 @@
 Python Scrapy
 
+Web scraping utilizando Python Scrapy e XPath 
+Vídeo: https://www.youtube.com/watch?v=NhZ2uhYpxtg
+
 sudo dnf install -f python3 
 pip scrapy
 
