@@ -1,0 +1,7 @@
+#script para postar no facebook utilizando o python
+#Canal Djobix
+#pip install facebook_SDK --user
+
+import facebook
+facebook.GraphAPI(access_token='coleseutokenaquiondeestaestetexto').put_object(parent_object='me',connection_name='feed',message='Gameplay da Liveta Solstício',link='https://www.youtube.com/watch?v=a0ibxK6-34A')
+facebook.GraphAPI(access_token='coleseutokenaquiondeestaestetexto').put_photo(image=open('charada.png','rb'),message='Post de uma imagem')
