@@ -7,7 +7,7 @@ facebook.GraphAPI(access_token='coleseutokenaquiondeestaestetexto').put_object(p
 facebook.GraphAPI(access_token='coleseutokenaquiondeestaestetexto').put_photo(image=open('charada.png','rb'),message='Post de uma imagem')
 
 #Parapsotaremumgrupo - vc precisa ser admin do grupo! nesse caso o post será feito pelo seu usário direto no grupo
-facebook.GraphAPI(access_token='coleseutokendeusuarioaquiondeestaestetexto').put_object(parent_object='COLOQUEODIIDDOGRUPOAQUI',connection_name="feed",message=title+' '+hashtag,link=url)
+facebook.GraphAPI(access_token='coleseutokendeusuarioaquiondeestaestetexto').put_object(parent_object='COLOQUEODIIDDOGRUPOAQUI',connection_name="feed",message='texto que deseja postar',link='linkquedesejapostar')
 
 #verificar ID do grupo:
 #provavelmente estará na URL 
