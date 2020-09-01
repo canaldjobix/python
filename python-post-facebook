@@ -5,3 +5,15 @@
 import facebook
 facebook.GraphAPI(access_token='coleseutokenaquiondeestaestetexto').put_object(parent_object='me',connection_name='feed',message='Gameplay da Liveta Solstício',link='https://www.youtube.com/watch?v=a0ibxK6-34A')
 facebook.GraphAPI(access_token='coleseutokenaquiondeestaestetexto').put_photo(image=open('charada.png','rb'),message='Post de uma imagem')
+
+#Parapsotaremumgrupo - vc precisa ser admin do grupo! nesse caso o post será feito pelo seu usário direto no grupo
+facebook.GraphAPI(access_token='coleseutokendeusuarioaquiondeestaestetexto').put_object(parent_object='COLOQUEODIIDDOGRUPOAQUI',connection_name="feed",message=title+' '+hashtag,link=url)
+
+#verificar ID do grupo:
+#provavelmente estará na URL 
+#Ex: https://www.facebook.com/groups/1621802178050513
+#ID=1621802178050513
+#Caso não esteja abra a page do grupo, visualize o código
+#procure por fb://group/
+#vc encontrará algo +/- assim: content="fb://group/1621802178050513" />
+#o ID está entr as barras finais
