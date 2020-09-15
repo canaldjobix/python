@@ -1,0 +1,15 @@
+#pip install tweepy --user
+
+#lembre-se de criar a aplicação no Twitter (https://developer.twitter.com/) e substituir os valores
+
+APIkey='RhHi6pyS5u1x4k9MdPQCawHM5'
+APIsecretkey='eLmKaSfLRS00qlZy231pwEOtIHsIFMzoBZcyCobpUU854NUA8o'
+Accesstoken='51621844-rFhrQMwoe6EudARyZ0mXdHAipZuyfn9AKTxmmr7Tt'
+Accesstokensecret='aqGDXEjga2m4ajMsMbwIpm2Q2IjfYDFPRF6oW0BvhHzeY'
+
+import tweepy
+auth=tweepy.OAuthHandler(APIkey,APIsecretkey)
+auth.set_access_token(Accesstoken,Accesstokensecret) 
+
+tweet=tweepy.API(auth)
+tweet.update_status('Aqui soy yo: Djobix! https://www.youtube.com/channel/UCwzqifcWeH0Y3DlMslM_36w?sub_confirmation=1')
