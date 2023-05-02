@@ -1,0 +1,16 @@
+instalar-pandas-windows-python
+Instalar o Pandas no Windows via Python - Resolvendo problemas na instalação | Djobix de TI e Dados
+https://youtu.be/o_45negW6B4
+#python #pandas #canaldjobix
+
+
+py --version
+py -m pip --version
+py -m ensurepip --default-pip
+py -m pip install --upgrade pip setuptools wheel
+py -m pip pandas
+
+
+Python Oficial: https://www.python.org
+repositório de Pacotes: https://pypi.org
+Riotina de instalação: https://packaging.python.org/en/latest/tutorials/installing-packages/
